@@ -1,19 +1,22 @@
-# Solar Energy Yield Calculator
+# Solar Energy Yield & Efficiency Calculator
 
-Simple Python script to estimate daily, monthly, and yearly energy production for a Solar PV system.
+This repository provides advanced simulation tools for Solar PV performance analysis, focusing on energy yield, environmental loss factors, and system types.
 
-## How It Works
-The calculator takes 3 inputs from the user:
-1. **Panel Power (Watts):** e.g., 455 W
-2. **Number of Panels:** Total count in the string.
-3. **Peak Sun Hours (h):** Average daily sun duration (e.g., 5.5 hours for Mersin).
+## My Projects
 
-It uses a standard **Performance Ratio (PR) of 0.80** to account for system losses (temperature, dust, cables).
+### 1. Solar Energy Yield (`solar_calc.py`)
+Basic calculator to estimate daily and yearly energy production using panel wattage and peak sun hours.
 
-## Example Output
---- CALCULATION RESULTS --- Total System Size: 10.92 kWp Daily Production : 45.43 kWh Monthly Production: 1362.82 kWh Yearly Production : 16353.80 kWh
+### 2. Efficiency & Shading Study (`solar_efficiency_analysis.py`)
+Simulates how temperature and shading affect panel efficiency.
+- Implements temperature coefficient loss.
+- Visualizes performance degradation in high-temperature regions.
 
+### 3. Tracking System Comparison (`solar_tracking_comparison.py`)
+A mathematical comparison between fixed-tilt panels and single-axis solar trackers.
+- Analyzes cosine loss for static systems.
+- Visualizes the energy gain achieved by tracking the sun's position.
 
 ---
-**Developer:** Kutay Yilmaz  
-*Electrical & Electronics Engineering Student*
+**Tools:** Python, NumPy, Matplotlib
+**Author:** Kutay Yilmaz
